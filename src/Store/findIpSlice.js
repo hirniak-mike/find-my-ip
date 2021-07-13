@@ -16,6 +16,7 @@ const findIpSlice = createSlice({
     setError: (state) => {
       state.isLoading = false;
       state.isError = true;
+      state.ipDetails = [];
     },
     getIpDetailsSuccess: (state, { payload }) => {
       state.isError = false;

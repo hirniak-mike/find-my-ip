@@ -12,9 +12,10 @@ import s from './style.module.scss';
 const SearchIP = () => {
   const dispatch = useDispatch();
 
-  const { isLoading } = useSelector(({ findIpSlice }) => {
+  const { isLoading, ipValue } = useSelector(({ findIpSlice }) => {
     return {
       isLoading: findIpSlice.isLoading,
+      ipValue: findIpSlice.ipDetails[0]?.value,
     };
   });
 
@@ -24,6 +25,7 @@ const SearchIP = () => {
   });
 
   const searchIP = ({ ip }) => {
+    if (ip === ipValue) return null;
     dispatch(getIpDetailsAction(ip));
   };
 
