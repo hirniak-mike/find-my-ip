@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
 import MainRouter from './Router/MainRouter';
-import store from './Store/store';
+import { store } from './Store';
 
 import './Res/Styles/reset_style.scss';
 import './Res/Styles/global.scss';

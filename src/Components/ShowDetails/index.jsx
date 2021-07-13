@@ -6,11 +6,11 @@ import { DetailItem } from '../../Components';
 import s from './style.module.scss';
 
 const ShowDetails = () => {
-  const { details, isError, isLoading } = useSelector(({ findIP }) => {
+  const { details, isError, isLoading } = useSelector(({ findIpSlice }) => {
     return {
-      details: findIP.ipDetails,
-      isError: findIP.isError,
-      isLoading: findIP.isLoading,
+      details: findIpSlice.ipDetails,
+      isError: findIpSlice.isError,
+      isLoading: findIpSlice.isLoading,
     };
   });
 

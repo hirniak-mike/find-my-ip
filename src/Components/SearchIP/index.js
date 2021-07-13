@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { getIpDetailsAction } from '../../Store/Actions/findIP';
+import { getIpDetailsAction } from '../../Store/findIpSlice';
 import { BasicInputIP, Button } from '../../Components';
 import { ip_details_scheme } from '../../Res/Consts/validationsForm';
 
@@ -12,9 +12,9 @@ import s from './style.module.scss';
 const SearchIP = () => {
   const dispatch = useDispatch();
 
-  const { isLoading } = useSelector(({ findIP }) => {
+  const { isLoading } = useSelector(({ findIpSlice }) => {
     return {
-      isLoading: findIP.isLoading,
+      isLoading: findIpSlice.isLoading,
     };
   });
 
