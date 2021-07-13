@@ -16,7 +16,7 @@ const DetailItem = ({ detail, value }) => {
       <p className={s.detail_text}>
         {detail}:
       </p>
-      <span className={s.value}>{!value ? `${!!value}` : `${value}`}</span>
+      <span className={s.value}>{`${value}`}</span>
     </li>
   );
 };
