@@ -1,0 +1,64 @@
+@import '../../Res/Styles/colors.scss';
+
+.detail_item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Roboto Mono', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 15px;
+  color: $main_white;
+}
+.icon {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main_black;
+  width: 26px;
+  height: 26px;
+  font-size: 17px;
+  line-height: 20px;
+  background-color: $main_purple;
+  border-radius: 4px;
+  margin-right: 19px;
+}
+.value {
+  margin-left: 10px;
+}
+.bool {
+  .icon {
+    background-color: $main_purple;
+  }
+  .value {
+    color: $main_purple;
+  }
+}
+.num {
+  .icon {
+    background-color: $main_green;
+  }
+  .value {
+    color: $main_green;
+  }
+}
+.str {
+  .icon {
+    background-color: $main_yellow;
+  }
+  .value {
+    color: $main_yellow;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .detail_item {
+    font-size: 16px;
+  }
+  .icon {
+    font-size: 16px;
+  }
+}

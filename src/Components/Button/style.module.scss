@@ -1,0 +1,24 @@
+@import '../../Res/Styles/colors.scss';
+
+.button {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 13px 10px 12px;
+  border-radius: 0px 5px 5px 0px;
+  color: $main_white;
+  background-color: $main_red;
+  transition: background-color .2s ease-out;
+  &:hover {
+    background-color: darken($main_red, 10%);
+  }
+  &_disabled {
+    background-color: $btn_disabled;
+    &:hover {
+      background-color: $btn_disabled;
+    }
+  }
+}

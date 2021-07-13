@@ -1,0 +1,14 @@
+@import '../../Res/Styles/colors.scss';
+
+.show_details {
+  overflow-y: auto;
+}
+
+.show_message {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: $text_grey;
+}
